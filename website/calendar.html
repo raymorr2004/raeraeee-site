@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Calendar</title>
+  <link id="theme-stylesheet" rel="stylesheet" href="assets/css/darkmode.css">
+  <link rel="icon" href="assets/img/favicon.webp" type="image/png">
+
+</head>
+<body id="calendar-page">
+  <div class="page-wrapper">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="games.html">Games</a>
+      <a href="minecraft.html">Minecraft</a>
+      <a href="socials.html">Socials</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="services.html">Services</a>
+      <a href="support.html">Support</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <header>
+      <h1>♥ Stream Calendar ♥</h1>
+
+      <div class="calendar-intro">
+        <p>
+          This is where I keep track of up-and-coming events! You might see stream nights, collabs,
+          or just cool moments I want to share with my community. ♥
+        </p>
+        <p>
+          Check back often — I try to keep it updated with anything exciting happening! ♥
+        </p>
+      </div>
+
+    </header>
+
+    <main>
+      <div class="calendar-controls">
+        <button id="prev-month">←</button>
+        <h2 id="month-year"></h2>
+        <button id="next-month">→</button>
+      </div>
+
+      <div class="calendar" id="calendar">
+        <!-- Calendar will be injected here -->
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        William Morrison | 2025 | RaeRaeeeTTV |
+        <a href="#top" class="footer-link">♥ Top</a> |
+        <a href="#" class="footer-link" id="toggle-theme">♥ Dark Mode</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="assets/js/calendar.js"></script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/highlightNav.js"></script>
+
+</body>
+</html>
