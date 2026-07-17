@@ -44,7 +44,7 @@ html, body {
   
   nav a {
     display: inline-block;
-    background-color: #D4AF37; /* Antique gold */
+    background-color: #fef8ec;
     color: #4B1E38; /* Deep plum */
     text-align: center;
     padding: 10px 16px;
@@ -57,7 +57,7 @@ html, body {
   }
   
   nav a:hover {
-    background-color: #b9972e; /* Darker gold on hover */
+    background-color: #f8f0eb;
     transform: scale(1.05);
   }
 
