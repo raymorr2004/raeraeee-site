@@ -27,7 +27,7 @@ html, body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fdf5f7; /* Soft blush */
+    background-color: #f4eef2; /* Soft blush */
   }
   
   /* -----------------------
@@ -35,7 +35,7 @@ html, body {
   ------------------------ */
   
   nav {
-    background-color: #D81B60; /* Raspberry magenta */
+    background-color: #a95f7d; /* Raspberry magenta */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,8 +44,8 @@ html, body {
   
   nav a {
     display: inline-block;
-    background-color: #fef8ec;
-    color: #4B1E38; /* Deep plum */
+    background-color: #faf6f7;
+    color: #493944; /* Deep plum */
     text-align: center;
     padding: 10px 16px;
     margin: 5px;
@@ -57,14 +57,14 @@ html, body {
   }
   
   nav a:hover {
-    background-color: #f8f0eb;
+    background-color: #eee6eb;
     transform: scale(1.05);
   }
 
   nav a.active {
-    outline: 2px solid #D81B60; /* Magenta border */
-    background-color: #fce8e8;  /* Light blush highlight */
-    color: #4B1E38;             /* Deep plum for contrast */
+    outline: 2px solid #a95f7d; /* Magenta border */
+    background-color: #eadde3;  /* Light blush highlight */
+    color: #493944;             /* Deep plum for contrast */
   }
   
 
@@ -82,8 +82,8 @@ html, body {
   min-width: 100px;
   padding: 10px 16px;
 
-  background-color: #fef8ec;
-  color: #4B1E38;
+  background-color: #faf6f7;
+  color: #493944;
 
   border-radius: 50px;
 
@@ -114,7 +114,7 @@ html, body {
 }
 
 .nav-dropdown summary:hover {
-  background-color: #f8f0eb;
+  background-color: #eee6eb;
   transform: scale(1.05);
 }
 
@@ -126,7 +126,7 @@ html, body {
   margin-top: 5px;
   padding: 6px;
 
-  background-color: #D81B60;
+  background-color: #a95f7d;
 
   border-radius: 14px;
 }
@@ -135,6 +135,31 @@ html, body {
   width: 100%;
   box-sizing: border-box;
   white-space: nowrap;
+}
+
+nav a:hover {
+  background-color: #e3ced8;
+  color: #7f4560;
+  transform: scale(1.05);
+}
+
+nav a.active {
+  outline: 2px solid #8f526c;
+  background-color: #d9bdca;
+  color: #63384d;
+}
+
+.nav-dropdown summary:hover {
+  background-color: #e3ced8;
+  color: #7f4560;
+  transform: scale(1.05);
+}
+
+/* Services button when dropdown is open */
+.nav-dropdown[open] summary {
+  background-color: #d9bdca;
+  color: #63384d;
+  outline: 2px solid #8f526c;
 }
 
 
@@ -161,19 +186,19 @@ html, body {
   header {
     padding: 20px;
     text-align: center;
-    background-color: #f8f0eb; /* Soft cream */
-    color: #4B1E38; /* Deep plum */
+    background-color: #eee6eb; /* Soft cream */
+    color: #493944; /* Deep plum */
   }
 
   .social-intro {
-    background-color: #fef8ec;
+    background-color: #faf6f7;
     padding: 20px;
     margin: 0 auto 20px;
     max-width: 800px;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
-    color: #4B1E38;
+    color: #493944;
     font-size: 1rem;
     line-height: 1.6;
   }
@@ -185,7 +210,7 @@ html, body {
   
   main {
     padding: 20px;
-    color: #333;
+    color: #403a3e;
   }
 
   /* -----------------------
@@ -193,27 +218,27 @@ html, body {
   ------------------------ */
 
   .contact-note {
-    background-color: #f8f0eb; /* Soft cream like the header */
+    background-color: #eee6eb; /* Soft cream like the header */
     padding: 30px 20px;
     margin-top: 40px;
-    border-top: 2px solid #D4AF37; /* Gold border like the socials panel */
+    border-top: 2px solid #b8a07a; /* Gold border like the socials panel */
     text-align: center;
-    color: #4B1E38; /* Deep plum */
+    color: #493944; /* Deep plum */
   }
   
   .contact-note h2 {
-    color: #D81B60; /* Magenta */
+    color: #a95f7d; /* Magenta */
     margin-bottom: 10px;
   }
   
   .contact-note a {
-    color: #D81B60;
+    color: #a95f7d;
     text-decoration: none;
     font-weight: bold;
   }
   
   .contact-note a:hover {
-    color: #b9972e; /* Gold on hover */
+    color: #9b8463; /* Gold on hover */
     text-decoration: underline;
   }
 
@@ -229,7 +254,7 @@ html, body {
   .email-address {
     display: none;
     cursor: pointer;
-    color: #4B1E38;
+    color: #493944;
     font-size: 0.95rem;
     transition: color 0.3s ease;
   }
@@ -240,7 +265,7 @@ html, body {
   }
   
   .email-address:hover {
-    color: #D81B60;
+    color: #a95f7d;
   }
   
   .copy-confirm {
@@ -249,7 +274,7 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.85rem;
-    color: #D81B60;
+    color: #a95f7d;
     opacity: 0;
     transition: opacity 0.3s ease;
     white-space: nowrap;
@@ -284,7 +309,7 @@ html, body {
   .home-image-left,
   .home-image-right {
     display: none; /* Hidden by default (mobile-first) */
-    background-color: #fef8ec; /* Soft golden cream */
+    background-color: #faf6f7; /* Soft golden cream */
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -301,18 +326,18 @@ html, body {
   
   /* Welcome message styled like a content card */
   .welcome-message {
-    background-color: #fef8ec;
+    background-color: #faf6f7;
     padding: 30px 20px;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    color: #4B1E38; /* Deep plum text */
+    color: #493944; /* Deep plum text */
     max-width: 800px;
     text-align: center;
   }
   
   /* Heading styled like other magenta elements */
   .welcome-message h2 {
-    color: #D81B60; /* Magenta */
+    color: #a95f7d; /* Magenta */
     margin-bottom: 20px;
     font-size: 1.8rem;
   }
@@ -326,13 +351,13 @@ html, body {
   
   /* Link style inside welcome section */
   .welcome-message a {
-    color: #4B1E38;
+    color: #493944;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .welcome-message a:hover {
-    color: #D81B60;
+    color: #a95f7d;
     text-decoration: none;
   }
   
@@ -352,7 +377,7 @@ html, body {
   .home-image-left h2,
   .home-image-right h2 {
     font-size: 1.2rem;
-    color: #D81B60; /* Magenta */
+    color: #a95f7d; /* Magenta */
     margin-bottom: 10px;
     text-align: center;
   }
@@ -360,7 +385,7 @@ html, body {
   .home-image-left p,
   .home-image-right p {
     font-size: 0.95rem;
-    color: #4B1E38; /* Deep plum */
+    color: #493944; /* Deep plum */
     text-align: center;
     margin: 0;
     line-height: 1.4;
@@ -385,8 +410,8 @@ html, body {
   
   
   .article-box {
-    background-color: #fef8ec; /* Soft golden cream */
-    border: 1px solid #ddd;
+    background-color: #faf6f7; /* Soft golden cream */
+    border: 1px solid #d8cfd4;
     border-radius: 12px;
     padding: 15px;
     text-align: center;
@@ -402,12 +427,12 @@ html, body {
   }
   
   .article-box h3 {
-    color: #D81B60;
+    color: #a95f7d;
     margin-bottom: 10px;
   }
   
   .article-box p {
-    color: #333;
+    color: #403a3e;
     font-size: 0.95rem;
   }
   
@@ -420,13 +445,13 @@ html, body {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 30px 20px;
-    background-color: #fdf5f7;
-    border-top: 2px solid #D4AF37;
-    border-bottom: 2px solid #D4AF37;
+    background-color: #f4eef2;
+    border-top: 2px solid #b8a07a;
+    border-bottom: 2px solid #b8a07a;
   }
   
   .social-link {
-    background-color: #fef8ec;
+    background-color: #faf6f7;
     border-radius: 12px;
     padding: 15px;
     text-align: center;
@@ -449,7 +474,7 @@ html, body {
   
   .social-link h4 {
     margin: 10px 0 8px;
-    color: #D81B60;
+    color: #a95f7d;
   }
   
   .social-link p {
@@ -469,13 +494,13 @@ html, body {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 30px 20px;
-    background-color: #fdf5f7;
-    border-top: 2px solid #D4AF37;
-    border-bottom: 2px solid #D4AF37;
+    background-color: #f4eef2;
+    border-top: 2px solid #b8a07a;
+    border-bottom: 2px solid #b8a07a;
   }
   
   .game-card {
-    background-color: #fef8ec;
+    background-color: #faf6f7;
     border-radius: 12px;
     padding: 15px;
     text-align: center;
@@ -498,7 +523,7 @@ html, body {
   
   .game-card h4 {
     margin: 10px 0 8px;
-    color: #D81B60;
+    color: #a95f7d;
   }
   
   .game-card p {
@@ -511,13 +536,13 @@ html, body {
   
   /* Match social-link <a> style for game cards */
   .game-card p a {
-    color: #4B1E38; /* Deep plum to match your theme */
+    color: #493944; /* Deep plum to match your theme */
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .game-card p a:hover {
-    color: #D81B60; /* Magenta on hover */
+    color: #a95f7d; /* Magenta on hover */
     text-decoration: none;
   }
 
@@ -526,64 +551,64 @@ html, body {
   ------------------------ */
   
   .games-intro {
-    background-color: #fef8ec;
+    background-color: #faf6f7;
     padding: 20px;
     margin: 0 auto 20px;
     max-width: 800px;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
-    color: #4B1E38;
+    color: #493944;
     font-size: 1rem;
     line-height: 1.6;
   }
   
   .games-note {
-    background-color: #f8f0eb;
+    background-color: #eee6eb;
     padding: 30px 20px;
     margin-top: 40px;
-    border-top: 2px solid #D4AF37;
+    border-top: 2px solid #b8a07a;
     text-align: center;
-    color: #4B1E38;
+    color: #493944;
   }
   
   .games-note h2 {
-    color: #D81B60;
+    color: #a95f7d;
     margin-bottom: 10px;
   }
   
   
   /* Link styling inside social descriptions */
   .social-link p a {
-    color: #4B1E38;
+    color: #493944;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .social-link p a:hover {
-    color: #D81B60;
+    color: #a95f7d;
     text-decoration: none;
   }
   
   /* Footer CSS */
   
   .site-footer {
-    background-color: #f8f0eb; /* Soft cream tone */
+    background-color: #eee6eb; /* Soft cream tone */
     text-align: center;
     padding: 15px 10px;
     font-size: 0.9rem;
-    color: #4B1E38; /* Deep plum */
-    border-top: 1px solid #D4AF37;
+    color: #493944; /* Deep plum */
+    border-top: 1px solid #b8a07a;
   }
   
   .site-footer a.footer-link {
-    color: #D81B60; /* Magenta */
+    color: #a95f7d; /* Magenta */
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .site-footer a.footer-link:hover {
-    color: #b9972e; /* Gold on hover */
+    color: #9b8463; /* Gold on hover */
     text-decoration: underline;
   }
   
@@ -612,7 +637,7 @@ html, body {
 .about-section-header {
   position: relative;
   padding: 18px 42px 18px 18px;
-  border-bottom: 2px solid #D81B60;
+  border-bottom: 2px solid #a95f7d;
   border-radius: 12px 12px 0 0;
   text-align: center;
   cursor: pointer;
@@ -623,12 +648,12 @@ html, body {
 }
 
 .about-section-header:hover {
-  background-color: #fce8e8;
+  background-color: #eadde3;
 }
 
 .about-section-header h2 {
   margin: 0;
-  color: #D81B60;
+  color: #a95f7d;
 }
 
 /* Expand and collapse arrow */
@@ -638,7 +663,7 @@ html, body {
   position: absolute;
   top: 50%;
   right: 18px;
-  color: #D81B60;
+  color: #a95f7d;
   transform: translateY(-50%);
   transition: transform 0.25s ease;
 }
@@ -665,7 +690,7 @@ html, body {
 /* Cards inside each section */
 
 .about-card {
-  background-color: #fef8ec;
+  background-color: #faf6f7;
   padding: 20px;
   border-radius: 12px;
   text-align: center;
@@ -674,12 +699,12 @@ html, body {
 
 .about-card h3 {
   margin-top: 0;
-  color: #D81B60;
+  color: #a95f7d;
 }
 
 .about-card p,
 .about-card li {
-  color: #333;
+  color: #403a3e;
   line-height: 1.6;
 }
 
@@ -710,27 +735,27 @@ html, body {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  border: 2px dashed #D4AF37;
+  border: 2px dashed #b8a07a;
   border-radius: 10px;
-  background-color: #f8f0eb;
-  color: #4B1E38;
+  background-color: #eee6eb;
+  color: #493944;
 }
 
 .about-image-placeholder p {
   margin: 0;
-  color: #4B1E38;
+  color: #493944;
 }
 
 /* Optional links inside About cards */
 
 .about-card a {
-  color: #D81B60;
+  color: #a95f7d;
   font-weight: bold;
   text-decoration: none;
 }
 
 .about-card a:hover {
-  color: #b9972e;
+  color: #9b8463;
 }
 
 /* Two cards per row when enough room is available */
@@ -760,14 +785,14 @@ html, body {
 }
 
   .about-intro {
-    background-color: #fef8ec;
+    background-color: #faf6f7;
     padding: 20px;
     margin: 0 auto 20px;
     max-width: 800px;
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
-    color: #4B1E38;
+    color: #493944;
     font-size: 1rem;
     line-height: 1.6;
   }
@@ -812,10 +837,10 @@ html, body {
 .disclaimer {
   margin-top: 16px;
   padding: 12px 14px;
-  background-color: #f8f0eb;
-  border-left: 4px solid #D81B60;
+  background-color: #eee6eb;
+  border-left: 4px solid #a95f7d;
   border-radius: 8px;
-  color: #4B1E38;
+  color: #493944;
   font-size: 0.9rem;
   line-height: 1.5;
   text-align: left;
@@ -888,7 +913,7 @@ html, body {
   .calendar-day {
     text-align: center;
     padding: 12px 0;
-    background-color: #fef8ec; /* Light theme card background */
+    background-color: #faf6f7; /* Light theme card background */
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
@@ -896,7 +921,7 @@ html, body {
   
 
   .calendar-day:hover {
-    background-color: #fce8e8; /* Light rosy hover */
+    background-color: #eadde3; /* Light rosy hover */
     transform: scale(1.05);
     transition: transform 0.2s ease, background-color 0.3s ease;
   }
@@ -908,35 +933,35 @@ html, body {
   }
 
   .calendar-day:has(.event-text) {
-    background-color: #fbeae4; /* Light pink tint for event days */
-    border: 1px solid #D81B60;
+    background-color: #eadfe3; /* Light pink tint for event days */
+    border: 1px solid #a95f7d;
   }
 
 .event-text {
   margin-top: 8px;
   font-size: 0.85rem;              /* Slightly larger */
-  color: #4B1E38;                  /* Deep plum for contrast */
+  color: #493944;                  /* Deep plum for contrast */
   text-align: center;
   font-weight: 600;                /* Semi-bold for visibility */
 }
 
 .event-time {
   font-size: 0.8rem;
-  color: #D81B60;                  /* Raspberry magenta for contrast */
+  color: #a95f7d;                  /* Raspberry magenta for contrast */
   margin-top: 4px;
   text-align: center;
   font-weight: 500;
 }
 
 .calendar-intro {
-  background-color: #fef8ec;
+  background-color: #faf6f7;
   padding: 20px;
   margin: 0 auto 20px;
   max-width: 800px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
-  color: #4B1E38;
+  color: #493944;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -1005,7 +1030,7 @@ html, body {
 
 /* Service cards: make H3 change color on hover/focus like links */
 .game-panel .service-card h3 {
-  color: #4B1E38;            /* base plum */
+  color: #493944;            /* base plum */
   transition: color .25s ease;
 }
 
@@ -1013,7 +1038,7 @@ html, body {
 .game-panel .service-card h3:hover,
 .game-panel .service-card:focus-visible h3,
 .game-panel .service-card:focus-within h3 {
-  color: #D81B60;            /* same as link hover in light mode */
+  color: #a95f7d;            /* same as link hover in light mode */
 }
 
 /* ===== PACKAGES: always-open cards, left-aligned content ===== */
@@ -1097,8 +1122,8 @@ html, body {
 
 /* Hover cue like your links */
 #packages .package-card h3 { transition: color .25s ease; }
-#packages .package-card:hover h3 { color: #FF66A3; }           /* dark */
-html:not(.dark) #packages .package-card:hover h3 { color: #D81B60; } /* light */
+#packages .package-card:hover h3 { color: #a95f7d; }           /* dark */
+html:not(.dark) #packages .package-card:hover h3 { color: #a95f7d; } /* light */
 
 /* FAQ strip */
 #faq { margin-top: 28px; }
@@ -1129,7 +1154,7 @@ html:not(.dark) #packages .package-card:hover h3 { color: #D81B60; } /* light */
 #faq .faq-item[open] summary h3::after { transform: rotate(180deg); }
 
 /* Hover cue (matches your light link hover) */
-#faq .faq-item:hover summary h3 { color: #D81B60; }
+#faq .faq-item:hover summary h3 { color: #a95f7d; }
 
 /* Answer body */
 #faq .answer { padding: 0 14px 12px; }
@@ -1140,14 +1165,14 @@ html:not(.dark) #packages .package-card:hover h3 { color: #D81B60; } /* light */
 ------------------------ */
 
 .minecraft-intro {
-  background-color: #fef8ec;
+  background-color: #faf6f7;
   padding: 20px;
   margin: 0 auto 30px;
   max-width: 900px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 1px 6px rgba(0,0,0,0.06);
-  color: #4B1E38;
+  color: #493944;
   line-height: 1.6;
 }
 
@@ -1174,7 +1199,7 @@ html:not(.dark) #packages .package-card:hover h3 { color: #D81B60; } /* light */
     text-align: center;
     padding-bottom: 15px;
     margin-bottom: 5px;
-    border-bottom: 2px solid #D81B60;
+    border-bottom: 2px solid #a95f7d;
     cursor: pointer;
     user-select: none;
     transition: opacity .2s ease;
@@ -1188,7 +1213,7 @@ html:not(.dark) #packages .package-card:hover h3 { color: #D81B60; } /* light */
     content: "▼";
     float: right;
     transition: transform .25s ease;
-    color: #D81B60;
+    color: #a95f7d;
 }
 
 .server-column.open .server-column-header::after {
@@ -1196,7 +1221,7 @@ html:not(.dark) #packages .package-card:hover h3 { color: #D81B60; } /* light */
 }
 
 .server-column-header h2 {
-  color: #D81B60;
+  color: #a95f7d;
   margin-bottom: 10px;
 }
 
@@ -1213,26 +1238,26 @@ html:not(.dark) #packages .package-card:hover h3 { color: #D81B60; } /* light */
 
 .server-status {
   font-weight: bold;
-  color: #4B1E38;
+  color: #493944;
 }
 
 /* Individual information cards */
 
 .server-card {
-  background-color: #fef8ec;
+  background-color: #faf6f7;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 .server-card h3 {
-  color: #D81B60;
+  color: #a95f7d;
   margin-top: 0;
 }
 
 .server-card p,
 .server-card li {
-  color: #333;
+  color: #403a3e;
   line-height: 1.6;
 }
 
@@ -1242,13 +1267,13 @@ html:not(.dark) #packages .package-card:hover h3 { color: #D81B60; } /* light */
 }
 
 .server-card a {
-  color: #D81B60;
+  color: #a95f7d;
   text-decoration: none;
   font-weight: bold;
 }
 
 .server-card a:hover {
-  color: #b9972e;
+  color: #9b8463;
 }
 
 /* Plugin entries */
@@ -1261,7 +1286,7 @@ html:not(.dark) #packages .package-card:hover h3 { color: #D81B60; } /* light */
 
 .plugin-entry {
   padding-bottom: 15px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #d8cfd4;
 }
 
 .plugin-entry:last-child {
@@ -1270,21 +1295,21 @@ html:not(.dark) #packages .package-card:hover h3 { color: #D81B60; } /* light */
 
 .plugin-entry h4 {
   margin-bottom: 8px;
-  color: #4B1E38;
+  color: #493944;
 }
 
 /* Bottom message */
 
 .minecraft-note {
-  background-color: #f8f0eb;
+  background-color: #eee6eb;
   padding: 30px 20px;
   margin-top: 40px;
-  border-top: 2px solid #D4AF37;
+  border-top: 2px solid #b8a07a;
   text-align: center;
 }
 
 .minecraft-note h2 {
-  color: #D81B60;
+  color: #a95f7d;
 }
 
 /* Desktop */
