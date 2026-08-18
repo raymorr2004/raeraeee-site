@@ -67,6 +67,92 @@ html, body {
     color: #4B1E38;             /* Deep plum for contrast */
   }
   
+
+  /* -----------------------
+   Services Dropdown
+------------------------ */
+
+.nav-dropdown {
+  position: relative;
+  margin: 5px;
+}
+
+.nav-dropdown summary {
+  display: inline-block;
+  min-width: 100px;
+  padding: 10px 16px;
+
+  background-color: #fef8ec;
+  color: #4B1E38;
+
+  border-radius: 50px;
+
+  text-align: center;
+  font-weight: bold;
+
+  cursor: pointer;
+  user-select: none;
+
+  list-style: none;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.nav-dropdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.nav-dropdown summary::after {
+  content: " ▼";
+  font-size: 0.75em;
+}
+
+.nav-dropdown[open] summary::after {
+  content: " ▲";
+}
+
+.nav-dropdown summary:hover {
+  background-color: #f8f0eb;
+  transform: scale(1.05);
+}
+
+.nav-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 5px;
+  padding: 6px;
+
+  background-color: #D81B60;
+
+  border-radius: 14px;
+}
+
+.nav-dropdown-menu a {
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+
+/* Desktop / tablet dropdown behavior */
+
+@media (min-width: 768px) {
+  .nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 1000;
+
+    min-width: 190px;
+  }
+}
   
   /* -----------------------
      Header

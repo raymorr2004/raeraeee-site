@@ -118,3 +118,40 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// =========================
+// Finished Project Sliders
+// =========================
+
+document.querySelectorAll(".about-slider").forEach((slider) => {
+  const slides = slider.querySelectorAll(".about-slide");
+
+  // No reason to create a timer for a single image
+  if (slides.length <= 1) {
+    return;
+  }
+
+  let currentSlide = 0;
+
+  setInterval(() => {
+    slides[currentSlide].classList.remove("is-active");
+
+    currentSlide = (currentSlide + 1) % slides.length;
+
+    slides[currentSlide].classList.add("is-active");
+  }, 4000);
+});
+
+// =========================
+// Finished Project Sections
+// =========================
+
+document.querySelectorAll(".about-section-header").forEach((header) => {
+  header.addEventListener("click", () => {
+    const section = header.closest(".about-section");
+
+    if (section) {
+      section.classList.toggle("open");
+    }
+  });
+});
+
